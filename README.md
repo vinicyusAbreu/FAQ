@@ -7,7 +7,7 @@ Criação de um FAQ de perguntas frequentes responsivo. Desafio do Frontend Ment
 Projeto criado para treinamento de animações com css. Desenvolvido com HTML, CSS.
 
 ## ✨ Demonstração    
-Veja abaixo uma gif do projeto.</br>
+Veja abaixo um gif do projeto.</br>
 [![image from giphy](https://i.giphy.com/media/bqOMDkM2HNrkruRITr/giphy.webp)](https://media.giphy.com/media/bqOMDkM2HNrkruRITr/giphy.gif?cid=790b76112f6573aa2080fd304a1c13cb0e30c26177106c8f&rid=giphy.gif&ct=g)
 
 ## 🎯 Objetivo do projeto
