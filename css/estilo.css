@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+main {
+    height: 100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    width: 20rem;
+    max-height: 60rem;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.box1desktop {
+    display: none;
+}
+
+.box1 {
+    position: relative;
+    bottom: 6.5rem;
+    text-align: center;
+    height: 10rem;
+    right: 1rem;
+}
+
+.sombra {
+    position: relative;
+    bottom: 6rem;
+    left: 1rem;
+}
+
+.box2 {
+    margin-top: -4rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.box2 h1 {
+    font-size: 2rem;
+    color: hsl(238, 29%, 16%);
+    padding-bottom: 1rem;
+}
+
+details {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+summary {
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(237, 12%, 33%);
+
+    cursor: pointer;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    background: url(../imagem/icon-arrow-down.svg);
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: .3s;
+    float: right;
+}
+
+details[open] summary::-webkit-details-marker {
+    transform: rotate(180deg);
+}
+
+.faq p {
+    font-size: .9rem;
+    color: hsl(240, 6%, 50%);
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        padding: 3.12rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 65rem;
+        max-height: 60rem;
+        justify-content: space-between;
+    }
+    .box1 {
+        display: none;
+    }
+    .box2 {
+        width: 50%;
+        margin: 0;
+        padding-top: 4rem;
+        text-align: left;
+    }
+    .box2 h1 {
+        margin-left: 1.3rem;
+    }
+    .box1desktop {
+        display: block;
+        width: 50%;
+        background-image: url(../imagem/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: bottom;
+        background-size: contain;
+    }
+    .woman-desktop {
+        width: 30rem;
+        position: relative;
+        top: 3rem;
+    }
+    .box {
+        width: 5rem;
+        position: relative;
+        bottom: 12rem;
+        z-index: 5;
+        width: 10rem;
+        animation-name: boxe;
+        animation-name: boxe;
+        animation-duration: .7s;
+        animation-iteration-count: infinite;
+        transition: ease-in;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+    @keyframes boxe {
+        from {
+            transform: translateY(-25px);
+        }
+        to {
+            transform: translateY(25px);
+        }
+    }
+}
